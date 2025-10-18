@@ -1,0 +1,9 @@
+services:
+  app:
+    image: myapp:latest
+    container_name: myapp
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
